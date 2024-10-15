@@ -128,7 +128,6 @@ def create_vectorstore(chunks, embedding_function, file_name, vector_store_path=
         collection_name=clean_filename(file_name),
         embedding=embedding_function,
         ids=list(unique_ids),
-        persist_directory=vector_store_path,
     )
 
     # The database should save automatically after we create it
